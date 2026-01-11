@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MedDeck — Support & Docs</title>
+  <meta name="description" content="MedDeck — support, documentation, and contact for MedDeck users." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:title" content="MedDeck — Support & Docs" />
+  <meta property="og:description" content="Support resources and contact for MedDeck users." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="/">
+        <svg class="logo" width="40" height="40" viewBox="0 0 48 48" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+          <rect width="48" height="48" rx="8" fill="#0f172a" />
+          <path d="M14 32h20v-4H14v4zm0-8h20v-4H14v4z" fill="#3b82f6"/>
+        </svg>
+        <span class="brand-name">MedDeck</span>
+      </a>
+
+      <nav class="nav" id="primary-nav">
+        <a href="#features">Features</a>
+        <a href="#docs">Docs</a>
+        <a href="#support">Support</a>
+        <a class="btn btn-ghost" href="#contact">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Beautiful clinical slide decks, faster.</h1>
+          <p class="lead">MedDeck helps clinicians and educators create, share, and present medical slide decks with templates, data charts, and secure sharing.</p>
+          <p class="cta-row">
+            <a id="cta" class="btn btn-primary" href="mailto:meddeckpresentations@gmail.com?subject=MedDeck%20Support">Email support</a>
+            <a class="btn btn-outline" href="https://github.com/alionpax/meddeck" target="_blank" rel="noopener">View app repo</a>
+          </p>
+          <ul class="trust">
+            <li><strong>Fast templates</strong></li>
+            <li><strong>Export PPTX & PDF</strong></li>
+            <li><strong>Secure sharing</strong></li>
+          </ul>
+        </div>
+
+        <div class="hero-media">
+          <div class="device">
+            <img alt="MedDeck preview screenshot placeholder" src="https://raw.githubusercontent.com/alionpax/meddeck/checkpoint/stable-viewer/assets/preview.png" onerror="this.style.display='none'" />
+            <div class="device-fallback">
+              <svg viewBox="0 0 800 520" preserveAspectRatio="xMidYMid meet" role="img" aria-hidden="true">
+                <rect x="0" y="0" width="800" height="520" rx="12" fill="#0f172a"/>
+                <rect x="28" y="28" width="744" height="464" rx="8" fill="#fff"/>
+                <rect x="48" y="60" width="656" height="18" rx="6" fill="#e6edf7"/>
+                <rect x="48" y="90" width="320" height="220" rx="6" fill="#f8fafc"/>
+                <rect x="384" y="90" width="320" height="220" rx="6" fill="#f1f5f9"/>
+                <rect x="48" y="330" width="656" height="120" rx="6" fill="#eef2ff"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <h2>Design-first features</h2>
+      <p class="lede">Everything clinicians need to create great presentations.</p>
+      <div class="feature-grid">
+        <article>
+          <h3>Clinically focused templates</h3>
+          <p>Pre-built slide templates tailored to clinical teaching and case presentations.</p>
+        </article>
+        <article>
+          <h3>Data-driven visuals</h3>
+          <p>Import data and produce clear charts and tables designed for medical audiences.</p>
+        </article>
+        <article>
+          <h3>Export & share</h3>
+          <p>Export to PPTX/PDF and share with role-based permissions for compliance.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="docs" class="container docs">
+      <h2>Docs & Quick Start</h2>
+      <p class="lede">Get the app, run locally, and start creating.</p>
+      <div class="docs-grid">
+        <div class="doc-card">
+          <h4>Repository</h4>
+          <p>Source code and instructions are in the app repository.</p>
+          <a class="link" href="https://github.com/alionpax/meddeck" target="_blank" rel="noopener">Open meddeck repo</a>
+        </div>
+        <div class="doc-card">
+          <h4>Quick start</h4>
+          <pre class="snippet">git clone https://github.com/alionpax/meddeck.git
+cd meddeck
+# follow Flutter setup and run</pre>
+        </div>
+        <div class="doc-card">
+          <h4>Contact for help</h4>
+          <p>For support, email <a href="mailto:meddeckpresentations@gmail.com">meddeckpresentations@gmail.com</a> or use the contact form below.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="container support">
+      <h2>Support & FAQ</h2>
+      <details>
+        <summary>How do I run the app locally?</summary>
+        <p>Install Flutter, then run <code>flutter run</code> in the project root. See the repo README for details.</p>
+      </details>
+      <details>
+        <summary>How do I export slides?</summary>
+        <p>Use the app's export options to save PPTX or PDF; reach out if you encounter issues.</p>
+      </details>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>Send us a message — the form will open your email client with a prefilled subject and body.</p>
+      <form class="contact-form" onsubmit="openMail(event)">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Tell us about your question" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <a class="btn btn-outline" href="mailto:meddeckpresentations@gmail.com">Or email us</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="brand-line">
+        <span class="brand">MedDeck</span>
+        <small>© <span id="year"></span> MedDeck</small>
+      </div>
+      <nav class="footer-nav">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="https://github.com/alionpax/meddeck" target="_blank" rel="noopener">Source</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // simple nav toggle
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('primary-nav');
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function openMail(e){
+      e.preventDefault();
+      const form = e.target;
+      const name = encodeURIComponent(form.name.value || '');
+      const email = encodeURIComponent(form.email.value || '');
+      const message = encodeURIComponent(form.message.value || '');
+      const subject = encodeURIComponent('MedDeck Support Request');
+      const body = encodeURIComponent(`Name: ${decodeURIComponent(name)}\nEmail: ${decodeURIComponent(email)}\n\n${decodeURIComponent(message)}`);
+      window.location.href = `mailto:meddeckpresentations@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
