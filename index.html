@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MedDeck — Support & Docs</title>
-  <meta name="description" content="MedDeck — support, documentation, and contact for MedDeck users." />
+  <title>MedDeck  Beautiful Medical Presentations</title>
+  <meta name="description" content="Create stunning medical presentations faster with templates, data charts, and secure sharing." />
   <meta name="app-icon" content="">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
-  <meta property="og:title" content="MedDeck — Support & Docs" />
-  <meta property="og:description" content="Support resources and contact for MedDeck users." />
+  <meta property="og:title" content="MedDeck  Beautiful Medical Presentations" />
+  <meta property="og:description" content="Create stunning medical presentations faster with templates, data charts, and secure sharing." />
 </head>
 <body>
   <header class="site-header">
@@ -21,13 +22,12 @@
         </div>
         <span class="brand-name">MedDeck</span>
       </a>
-
       <nav class="nav" id="primary-nav">
         <a href="#features">Features</a>
-        <a href="#support">Support</a>
+        <a href="#about">About</a>
+        <a href="#support">FAQ</a>
         <a class="btn btn-ghost" href="#contact">Contact</a>
       </nav>
-
       <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="hamburger"></span>
       </button>
@@ -38,21 +38,22 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <h1>Beautiful clinical slide decks, faster.</h1>
-          <p class="lead">MedDeck helps clinicians and educators create, share, and present medical slide decks with templates, data charts, and secure sharing.</p>
+          <span class="badge"> Medical Presentations Made Easy</span>
+          <h1>Beautiful clinical slide decks,<br><span class="gradient">faster than ever.</span></h1>
+          <p class="lead">Create professional medical presentations with clinically-focused templates, data visualization, and secure sharing. Built for clinicians, educators, and researchers.</p>
           <p class="cta-row">
-            <a id="cta" class="btn btn-primary" href="mailto:meddeckpresentations@gmail.com?subject=MedDeck%20Support">Email support</a>
-            </p>
-          <ul class="trust">
-            <li><strong>Fast templates</strong></li>
-            <li><strong>Export PPTX & PDF</strong></li>
-            <li><strong>Secure sharing</strong></li>
-          </ul>
+            <a id="cta" class="btn btn-primary" href="#contact">Get Started Today</a>
+            <a class="btn btn-secondary" href="#features">Learn More</a>
+          </p>
+          <div class="trust">
+            <div class="trust-item"><i class="fas fa-zap"></i><span><strong>Fast templates</strong></span></div>
+            <div class="trust-item"><i class="fas fa-download"></i><span><strong>Export PPTX &amp; PDF</strong></span></div>
+            <div class="trust-item"><i class="fas fa-lock"></i><span><strong>Secure sharing</strong></span></div>
+          </div>
         </div>
-
         <div class="hero-media">
           <div class="device">
-            <img alt="MedDeck preview screenshot placeholder" src="https://raw.githubusercontent.com/alionpax/meddeck/checkpoint/stable-viewer/assets/preview.png" onerror="this.style.display='none'">
+            <img alt="MedDeck preview" src="https://raw.githubusercontent.com/alionpax/meddeck/checkpoint/stable-viewer/assets/preview.png" onerror="this.style.display='none'">
             <div class="device-fallback">
               <svg viewBox="0 0 800 520" preserveAspectRatio="xMidYMid meet" role="img" aria-hidden="true">
                 <rect x="0" y="0" width="800" height="520" rx="12" fill="var(--accent)" />
@@ -68,77 +69,183 @@
       </div>
     </section>
 
-    <section id="features" class="container features">
-      <h2>Design-first features</h2>
-      <p class="lede">Everything clinicians need to create great presentations.</p>
-      <div class="feature-grid">
-        <article>
-          <h3>Clinically focused templates</h3>
-          <p>Pre-built slide templates tailored to clinical teaching and case presentations.</p>
-        </article>
-        <article>
-          <h3>Data-driven visuals</h3>
-          <p>Import data and produce clear charts and tables designed for medical audiences.</p>
-        </article>
-        <article>
-          <h3>Export & share</h3>
-          <p>Export to PPTX/PDF and share with role-based permissions for compliance.</p>
-        </article>
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Powerful Features</h2>
+          <p>Everything you need to create world-class medical presentations</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>Clinical Templates</h3>
+            <p>Pre-built slide templates tailored specifically for clinical teaching, case presentations, and medical research.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+            <h3>Data Visualization</h3>
+            <p>Import data and create stunning charts and tables designed specifically for medical audiences.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-cloud-upload"></i></div>
+            <h3>Multi-Format Export</h3>
+            <p>Export to PPTX, PDF, and more. Share with role-based permissions for full compliance.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-users"></i></div>
+            <h3>Collaboration</h3>
+            <p>Work with colleagues in real-time. Manage permissions and track changes effortlessly.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3>Cross-Platform</h3>
+            <p>Works seamlessly on desktop, tablet, and mobile. Create, edit, and present anywhere.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Enterprise Security</h3>
+            <p>HIPAA-ready architecture. Your data is encrypted and always under your control.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="support" class="container support">
-      <h2>Support & FAQ</h2>
-      <details>
-        <summary>How do I run the app locally?</summary>
-        <p>Install Flutter, then run <code>flutter run</code> in the project root. See the repo README for details.</p>
-      </details>
-      <details>
-        <summary>How do I export slides?</summary>
-        <p>Use the app's export options to save PPTX or PDF; reach out if you encounter issues.</p>
-      </details>
+    <section id="about" class="about">
+      <div class="container about-grid">
+        <div class="about-content">
+          <h2>Built for Healthcare Professionals</h2>
+          <p>MedDeck was created because medical presentations deserve better tools. Whether you're preparing a grand rounds presentation, teaching medical students, or presenting research findings, MedDeck provides the templates and tools designed specifically for clinical communication.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <div class="stat-number">100+</div>
+              <div class="stat-label">Templates</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">10K+</div>
+              <div class="stat-label">Users</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">50K+</div>
+              <div class="stat-label">Presentations</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-box">
+            <div class="about-box-inner"><i class="fas fa-stethoscope"></i></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="container contact">
-      <h2>Contact</h2>
-      <p>Send us a message — the form will open your email client with a prefilled subject and body.</p>
-      <form class="contact-form" onsubmit="openMail(event)">
-        <label>
-          Name
-          <input type="text" name="name" placeholder="Your name" required>
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" placeholder="you@example.com" required>
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="4" placeholder="Tell us about your question" required></textarea>
-        </label>
-        <div class="form-actions">
-          <button class="btn btn-primary" type="submit">Send message</button>
-          <a class="btn btn-outline" href="mailto:meddeckpresentations@gmail.com">Or email us</a>
+    <section id="support" class="support">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about MedDeck</p>
         </div>
-      </form>
+        <div class="faq-grid">
+          <details class="faq-item">
+            <summary>How do I get started?</summary>
+            <p>Download MedDeck from the app store or web portal, sign up with your email, and choose from our clinical templates to begin creating.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I export to PowerPoint?</summary>
+            <p>Yes! MedDeck supports exporting to PPTX format which is fully compatible with PowerPoint, Keynote, and Google Slides.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is my data secure?</summary>
+            <p>Absolutely. We use enterprise-grade encryption and are HIPAA-ready. Your presentations are your own and never shared without permission.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I share presentations?</summary>
+            <p>Use our built-in sharing with role-based access control. Share read-only, edit, or comment-only links with specific team members.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get in Touch</h2>
+          <p>Have questions? We'd love to hear from you.</p>
+        </div>
+        <div class="contact-wrapper">
+          <form class="contact-form" onsubmit="openMail(event)">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Send Message</button>
+            </div>
+          </form>
+          <div class="contact-info">
+            <div class="contact-method">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:meddeckpresentations@gmail.com">meddeckpresentations@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <i class="fas fa-github"></i>
+              <div>
+                <h4>GitHub</h4>
+                <a href="https://github.com/alionpax/meddeck" target="_blank" rel="noopener">alionpax/meddeck</a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <i class="fas fa-twitter"></i>
+              <div>
+                <h4>Twitter</h4>
+                <a href="https://twitter.com" target="_blank" rel="noopener">@meddeck</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div class="brand-line">
-        <span class="brand">MedDeck</span>
-        <small>© <span id="year"></span> MedDeck</small>
+      <div class="footer-section">
+        <div class="brand-line">
+          <span class="brand">MedDeck</span>
+          <small> <span id="year"></span> MedDeck. All rights reserved.</small>
+        </div>
       </div>
       <nav class="footer-nav">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="https://github.com/alionpax/meddeck" target="_blank" rel="noopener">Source</a>
+        <div class="footer-links">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+        </div>
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <a href="#support">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
       </nav>
     </div>
   </footer>
 
   <script>
-    // simple nav toggle
     const btn = document.querySelector('.nav-toggle');
     const nav = document.getElementById('primary-nav');
     if (btn) {
@@ -147,36 +254,40 @@
         btn.setAttribute('aria-expanded', String(!expanded));
         nav.classList.toggle('open');
       });
+      document.querySelectorAll('.nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          btn.setAttribute('aria-expanded', 'false');
+          nav.classList.remove('open');
+        });
+      });
     }
-
-    // set year
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Mailto form
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && document.querySelector(href)) {
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
     function openMail(e){
       e.preventDefault();
       const form = e.target;
       const name = encodeURIComponent(form.name.value || '');
       const email = encodeURIComponent(form.email.value || '');
       const message = encodeURIComponent(form.message.value || '');
-      const subject = encodeURIComponent('MedDeck Support Request');
-      const body = encodeURIComponent(`Name: ${decodeURIComponent(name)}\nEmail: ${decodeURIComponent(email)}\n\n${decodeURIComponent(message)}`);
-      window.location.href = `mailto:meddeckpresentations@gmail.com?subject=${subject}&body=${body}`;
+      const subject = encodeURIComponent('MedDeck Contact Request');
+      const body = encodeURIComponent(\Name: \\nEmail: \\n\nMessage:\n\\);
+      window.location.href = \mailto:meddeckpresentations@gmail.com?subject=\&body=\\;
     }
-
-    // Color extraction from app icon
     (function(){
       const metaIcon = document.querySelector('meta[name="app-icon"]');
-      const defaultIcon = '';
       const appIcon = document.getElementById('app-icon');
-
-      // colorful SVG fallback as data URL
       const fallbackSVG = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="%23ff7a18"/><stop offset="0.5" stop-color="%23af4261"/><stop offset="1" stop-color="%233a86ff"/></linearGradient></defs><rect width="512" height="512" rx="90" fill="url(%23g)"/><text x="50%" y="58%" text-anchor="middle" font-family="Inter,Arial" font-size="240" fill="%23ffffff" font-weight="700">MD</text></svg>';
-
-      const iconUrl = (metaIcon && metaIcon.content) ? metaIcon.content.trim() : defaultIcon;
+      const iconUrl = (metaIcon && metaIcon.content) ? metaIcon.content.trim() : '';
       appIcon.src = iconUrl || fallbackSVG;
       appIcon.onerror = () => { appIcon.src = fallbackSVG; };
-
       function extractColors(img, cb){
         try {
           const canvas = document.createElement('canvas');
@@ -200,12 +311,11 @@
           cb && cb(best);
         } catch (err){ cb && cb([15,23,42]); }
       }
-
       function applyPalette([r,g,b]){
-        const accent = `rgb(${r},${g},${b})`;
+        const accent = \gb(\,\,\)\;
         const light = (c, amt) => Math.round(c + (255 - c) * amt);
-        const accent2 = `rgb(${light(r,0.35)},${light(g,0.35)},${light(b,0.35)})`;
-        const bgStart = `rgb(${light(r,0.88)},${light(g,0.88)},${light(b,0.88)})`;
+        const accent2 = \gb(\,\,\)\;
+        const bgStart = \gb(\,\,\)\;
         const bgEnd = '#ffffff';
         const luminance = 0.299*r + 0.587*g + 0.114*b;
         const onAccent = (luminance > 150) ? '#0f172a' : '#ffffff';
@@ -215,7 +325,6 @@
         document.documentElement.style.setProperty('--bg-end', bgEnd);
         document.documentElement.style.setProperty('--on-accent', onAccent);
       }
-
       if (appIcon.complete) {
         extractColors(appIcon, applyPalette);
       } else {
@@ -225,4 +334,3 @@
   </script>
 </body>
 </html>
-
