@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>MedDeck  Beautiful Medical Presentations</title>
   <meta name="description" content="Create stunning medical presentations faster with templates, data charts, and secure sharing." />
-  <meta name="app-icon" content="">
+  <meta name="app-icon" content="icons/meddeck-logo.png">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -190,31 +190,36 @@
             </div>
           </form>
           <div class="contact-info">
-            <div class="contact-method">
-              <i class="fas fa-envelope"></i>
-              <div>
-                <h4>Email</h4>
-                <a href="mailto:meddeckpresentations@gmail.com">meddeckpresentations@gmail.com</a>
-              </div>
-            </div>
-            <div class="contact-method">
-              <i class="fas fa-github"></i>
-              <div>
-                <h4>GitHub</h4>
-                <a href="https://github.com/alionpax/meddeck" target="_blank" rel="noopener">alionpax/meddeck</a>
-              </div>
-            </div>
-            <div class="contact-method">
-              <i class="fas fa-twitter"></i>
-              <div>
-                <h4>Twitter</h4>
-                <a href="https://twitter.com" target="_blank" rel="noopener">@meddeck</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="contact-method">
+    <i class="fas fa-envelope"></i>
+    <div>
+      <h4>Email</h4>
+      <a href="mailto:meddeckpresentations@gmail.com">meddeckpresentations@gmail.com</a>
+    </div>
+  </div>
+  <div class="contact-method">
+    <i class="fab fa-instagram"></i>
+    <div>
+      <h4>Instagram</h4>
+      <a href="https://instagram.com/meddeckpresentations" target="_blank" rel="noopener">@meddeckpresentations</a>
+    </div>
+  </div>
+  <div class="contact-method">
+    <i class="fab fa-x-twitter"></i>
+    <div>
+      <h4>X</h4>
+      <a href="https://x.com/meddeckpresentations" target="_blank" rel="noopener">@meddeckpresentations</a>
+    </div>
+  </div>
+  <div class="contact-method">
+    <i class="fab fa-facebook"></i>
+    <div>
+      <h4>Facebook</h4>
+      <a href="https://facebook.com/meddeckpresenations" target="_blank" rel="noopener">meddeckpresenations</a>
+    </div>
+  </div>
+</div>
+</section>
   </main>
 
   <footer class="site-footer">
@@ -312,10 +317,13 @@
         } catch (err){ cb && cb([15,23,42]); }
       }
       function applyPalette([r,g,b]){
-        const accent = \gb(\,\,\)\;
+        const accent = \
+gb(\,\,\)\;
         const light = (c, amt) => Math.round(c + (255 - c) * amt);
-        const accent2 = \gb(\,\,\)\;
-        const bgStart = \gb(\,\,\)\;
+        const accent2 = \
+gb(\,\,\)\;
+        const bgStart = \
+gb(\,\,\)\;
         const bgEnd = '#ffffff';
         const luminance = 0.299*r + 0.587*g + 0.114*b;
         const onAccent = (luminance > 150) ? '#0f172a' : '#ffffff';
@@ -334,3 +342,4 @@
   </script>
 </body>
 </html>
+
